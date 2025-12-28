@@ -1,0 +1,54 @@
+<%- include('header') %>
+
+<main class="max-w-7xl mx-auto px-6 py-12">
+  <section class="text-center mb-12">
+    <h1 class="text-5xl font-bold gradient-text mb-4">Simple Pricing</h1>
+    <p class="text-xl text-gray-600">No hidden fees. Cancel anytime.</p>
+  </section>
+
+  <section class="grid md:grid-cols-3 gap-8">
+    <!-- Free -->
+    <div class="bg-white p-8 rounded-3xl shadow-lg text-center">
+      <h3 class="text-2xl font-bold mb-2">Free</h3>
+      <p class="text-4xl font-bold mb-4">₹0</p>
+      <ul class="text-gray-600 space-y-2 mb-6">
+        <li>✔ 5 PDFs / day</li>
+        <li>✔ Basic cropping</li>
+        <li>✖ No merge</li>
+      </ul>
+      <a href="/signup" class="gradient-bg text-white px-6 py-3 rounded-full font-semibold">
+        Get Started
+      </a>
+    </div>
+
+    <!-- Pro -->
+    <div class="bg-purple-600 text-white p-8 rounded-3xl shadow-2xl text-center scale-105">
+      <h3 class="text-2xl font-bold mb-2">Pro</h3>
+      <p class="text-4xl font-bold mb-4">₹299/mo</p>
+      <ul class="space-y-2 mb-6">
+        <li>✔ Unlimited PDFs</li>
+        <li>✔ Merge PDFs</li>
+        <li>✔ Add Date & Text</li>
+      </ul>
+      <a href="/signup" class="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold">
+        Buy Pro
+      </a>
+    </div>
+
+    <!-- Business -->
+    <div class="bg-white p-8 rounded-3xl shadow-lg text-center">
+      <h3 class="text-2xl font-bold mb-2">Business</h3>
+      <p class="text-4xl font-bold mb-4">₹999/mo</p>
+      <ul class="text-gray-600 space-y-2 mb-6">
+        <li>✔ Team Access</li>
+        <li>✔ Priority Support</li>
+        <li>✔ Bulk Orders</li>
+      </ul>
+      <a href="/contact" class="gradient-bg text-white px-6 py-3 rounded-full font-semibold">
+        Contact Sales
+      </a>
+    </div>
+  </section>
+</main>
+
+<%- include('footer') %>

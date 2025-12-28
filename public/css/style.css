@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { background: #333; color: white; padding: 10px 20px; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav ul li { position: relative; }
+nav ul li a { color: white; text-decoration: none; }
+.dropdown-content { display: none; position: absolute; background: #444; top: 100%; left: 0; padding: 10px; }
+.dropdown-content li { padding: 5px 0; }
+.dropdown:hover .dropdown-content { display: block; }
+form { margin: 20px 0; display: flex; flex-direction: column; gap: 10px; }
+aside { margin-top: 20px; border: 1px solid #ccc; padding: 10px; width: 200px; }

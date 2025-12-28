@@ -1,0 +1,285 @@
+<%- include('header') %>
+
+<main class="max-w-7xl mx-auto px-6 py-12">
+  <section class="bg-white rounded-3xl shadow-2xl p-12 mb-12 animate-fadeInUp border border-blue-100">
+    <div class="text-center max-w-4xl mx-auto">
+      <div class="inline-flex items-center space-x-2 bg-blue-100 px-4 py-2 rounded-full mb-6">
+        <i data-lucide="sparkles" class="w-4 h-4 text-blue-900"></i>
+        <span class="text-blue-900 font-semibold text-sm">Trusted by 500+ Sellers</span>
+      </div>
+      
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+        <span class="bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent">Professional PDF Cropping</span>
+        <br/>
+        <span class="text-gray-800">for Ecommerce Sellers</span>
+      </h1>
+      
+      <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+        Streamline your shipping label workflow with precision cropping for Meesho, Flipkart, Amazon, and Citymall. <strong class="text-blue-900">Merge, Crop, and Sort by SKU</strong> - Save time, reduce errors, and deliver professional results.
+      </p>
+      
+      <% if(typeof user === 'undefined' || !user){ %>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="/signup" class="bg-gradient-to-r from-blue-900 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all flex items-center space-x-2">
+          <i data-lucide="rocket" class="w-5 h-5"></i>
+          <span>Start Cropping Now</span>
+        </a>
+        <a href="/login" class="bg-white border-2 border-blue-900 text-blue-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all flex items-center space-x-2">
+          <i data-lucide="log-in" class="w-5 h-5"></i>
+          <span>Sign In</span>
+        </a>
+      </div>
+      <% } else { %>
+      <a href="/dashboard" class="inline-flex bg-gradient-to-r from-blue-900 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all items-center space-x-2">
+        <i data-lucide="layout-dashboard" class="w-5 h-5"></i>
+        <span>Go to Dashboard</span>
+      </a>
+      <% } %>
+      
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center p-6 bg-blue-50 rounded-2xl border border-blue-200">
+          <div class="text-4xl font-bold bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent mb-2">10,000+</div>
+          <div class="text-gray-600 font-medium">PDFs Processed</div>
+        </div>
+        <div class="text-center p-6 bg-blue-50 rounded-2xl border border-blue-200">
+          <div class="text-4xl font-bold bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent mb-2">500+</div>
+          <div class="text-gray-600 font-medium">Active Sellers</div>
+        </div>
+        <div class="text-center p-6 bg-blue-50 rounded-2xl border border-blue-200">
+          <div class="text-4xl font-bold bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent mb-2">99.9%</div>
+          <div class="text-gray-600 font-medium">Accuracy Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="grid md:grid-cols-3 gap-8 mb-12">
+    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all animate-fadeInUp delay-100 border border-blue-100">
+      <div class="w-16 h-16 bg-gradient-to-r from-blue-900 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+        <i data-lucide="zap" class="w-8 h-8 text-white"></i>
+      </div>
+      <h3 class="text-2xl font-bold text-blue-900 mb-4">Lightning Fast</h3>
+      <p class="text-gray-600 leading-relaxed">
+        Process multiple PDF labels in seconds with our optimized batch cropping engine. Handle high-volume orders effortlessly.
+      </p>
+    </div>
+    
+    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all animate-fadeInUp delay-200 border border-blue-100">
+      <div class="w-16 h-16 bg-gradient-to-r from-blue-900 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+        <i data-lucide="arrow-down-a-z" class="w-8 h-8 text-white"></i>
+      </div>
+      <h3 class="text-2xl font-bold text-blue-900 mb-4">Auto SKU Sorting</h3>
+      <p class="text-gray-600 leading-relaxed">
+        Automatically sort labels by SKU alphabetically. Perfect for organizing inventory and streamlining packing operations.
+      </p>
+    </div>
+    
+    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all animate-fadeInUp delay-300 border border-blue-100">
+      <div class="w-16 h-16 bg-gradient-to-r from-blue-900 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+        <i data-lucide="shield-check" class="w-8 h-8 text-white"></i>
+      </div>
+      <h3 class="text-2xl font-bold text-blue-900 mb-4">Secure & Private</h3>
+      <p class="text-gray-600 leading-relaxed">
+        Your documents are encrypted and processed securely. Files are automatically deleted after download for maximum privacy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Advanced Features -->
+  <section class="bg-gradient-to-br from-blue-50 to-white rounded-3xl shadow-xl p-12 mb-12 border border-blue-200">
+    <div class="text-center mb-10">
+      <h2 class="text-4xl font-bold text-blue-900 mb-4">Powerful Features</h2>
+      <p class="text-xl text-gray-600">Everything you need for professional label management</p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      <div class="bg-white rounded-xl p-6 shadow-md border border-blue-100 flex items-start space-x-4">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <i data-lucide="combine" class="w-6 h-6 text-blue-900"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-blue-900 text-lg mb-2">Merge Multiple PDFs</h4>
+          <p class="text-gray-600 text-sm">Combine multiple label files into one organized document</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-md border border-blue-100 flex items-start space-x-4">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <i data-lucide="scissors" class="w-6 h-6 text-blue-900"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-blue-900 text-lg mb-2">Precision Cropping</h4>
+          <p class="text-gray-600 text-sm">Platform-specific presets for perfect label dimensions</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-md border border-blue-100 flex items-start space-x-4">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <i data-lucide="arrow-down-a-z" class="w-6 h-6 text-blue-900"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-blue-900 text-lg mb-2">SKU Sorting</h4>
+          <p class="text-gray-600 text-sm">Automatically organize labels alphabetically by SKU</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-md border border-blue-100 flex items-start space-x-4">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <i data-lucide="calendar-clock" class="w-6 h-6 text-blue-900"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-blue-900 text-lg mb-2">Add Timestamp</h4>
+          <p class="text-gray-600 text-sm">Automatically add date and time to your labels</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-md border border-blue-100 flex items-start space-x-4">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <i data-lucide="type" class="w-6 h-6 text-blue-900"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-blue-900 text-lg mb-2">Custom Text</h4>
+          <p class="text-gray-600 text-sm">Add your own branding or notes to labels</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-6 shadow-md border border-blue-100 flex items-start space-x-4">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <i data-lucide="layers" class="w-6 h-6 text-blue-900"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-blue-900 text-lg mb-2">Batch Processing</h4>
+          <p class="text-gray-600 text-sm">Upload and process up to 10 files at once</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supported Platforms -->
+  <section class="bg-white rounded-3xl shadow-2xl p-12 mb-12 animate-fadeInUp delay-400 border border-blue-100">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-blue-900 mb-4">Supported Platforms</h2>
+      <p class="text-xl text-gray-600">Optimized cropping presets for all major ecommerce platforms</p>
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center border-2 border-blue-200 hover:border-blue-900 hover:shadow-xl transition-all group">
+        <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-900 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+          <i data-lucide="shopping-bag" class="w-8 h-8 text-white"></i>
+        </div>
+        <h4 class="text-xl font-bold text-blue-900">Meesho</h4>
+      </div>
+      
+      <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center border-2 border-blue-200 hover:border-blue-900 hover:shadow-xl transition-all group">
+        <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-900 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+          <i data-lucide="package-2" class="w-8 h-8 text-white"></i>
+        </div>
+        <h4 class="text-xl font-bold text-blue-900">Flipkart</h4>
+      </div>
+      
+      <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center border-2 border-blue-200 hover:border-blue-900 hover:shadow-xl transition-all group">
+        <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-900 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+          <i data-lucide="shopping-cart" class="w-8 h-8 text-white"></i>
+        </div>
+        <h4 class="text-xl font-bold text-blue-900">Amazon</h4>
+      </div>
+      
+      <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center border-2 border-blue-200 hover:border-blue-900 hover:shadow-xl transition-all group">
+        <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-900 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
+          <i data-lucide="store" class="w-8 h-8 text-white"></i>
+        </div>
+        <h4 class="text-xl font-bold text-blue-900">Citymall</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="mb-12">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-blue-900 mb-4">How It Works</h2>
+      <p class="text-xl text-gray-600">Simple 4-step process to crop and organize your labels</p>
+    </div>
+    
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-white rounded-2xl p-8 shadow-lg text-center border border-blue-100">
+        <div class="w-20 h-20 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-3xl font-bold text-white">1</span>
+        </div>
+        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="upload" class="w-6 h-6 text-blue-900"></i>
+        </div>
+        <h3 class="text-xl font-bold text-blue-900 mb-3">Upload PDFs</h3>
+        <p class="text-gray-600 text-sm">
+          Upload single or multiple shipping label PDFs
+        </p>
+      </div>
+      
+      <div class="bg-white rounded-2xl p-8 shadow-lg text-center border border-blue-100">
+        <div class="w-20 h-20 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-3xl font-bold text-white">2</span>
+        </div>
+        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="package" class="w-6 h-6 text-blue-900"></i>
+        </div>
+        <h3 class="text-xl font-bold text-blue-900 mb-3">Select Platform</h3>
+        <p class="text-gray-600 text-sm">
+          Choose your ecommerce platform for optimized cropping
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-lg text-center border border-blue-100">
+        <div class="w-20 h-20 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-3xl font-bold text-white">3</span>
+        </div>
+        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="settings" class="w-6 h-6 text-blue-900"></i>
+        </div>
+        <h3 class="text-xl font-bold text-blue-900 mb-3">Configure Options</h3>
+        <p class="text-gray-600 text-sm">
+          Enable merge, SKU sorting, timestamp, and custom text
+        </p>
+      </div>
+      
+      <div class="bg-white rounded-2xl p-8 shadow-lg text-center border border-blue-100">
+        <div class="w-20 h-20 bg-gradient-to-r from-blue-900 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-3xl font-bold text-white">4</span>
+        </div>
+        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="download" class="w-6 h-6 text-blue-900"></i>
+        </div>
+        <h3 class="text-xl font-bold text-blue-900 mb-3">Download Result</h3>
+        <p class="text-gray-600 text-sm">
+          Get your perfectly cropped and sorted labels
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gradient-to-r from-blue-900 to-blue-600 rounded-3xl shadow-2xl p-12 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4">Ready to Transform Your Workflow?</h2>
+      <p class="text-xl mb-8 text-blue-100">
+        Join hundreds of sellers who save hours every week with automated label cropping, merging, and SKU sorting
+      </p>
+      <% if(typeof user === 'undefined' || !user){ %>
+      <a href="/signup" class="inline-flex bg-white text-blue-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transform hover:-translate-y-1 transition-all items-center space-x-2 shadow-xl">
+        <i data-lucide="user-plus" class="w-5 h-5"></i>
+        <span>Create Free Account</span>
+      </a>
+      <% } else { %>
+      <a href="/dashboard" class="inline-flex bg-white text-blue-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transform hover:-translate-y-1 transition-all items-center space-x-2 shadow-xl">
+        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        <span>Start Cropping</span>
+      </a>
+      <% } %>
+    </div>
+  </section>
+</main>
+
+<script>
+  lucide.createIcons();
+</script>
+
+<%- include('footer') %>
