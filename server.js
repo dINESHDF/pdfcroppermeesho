@@ -7,7 +7,7 @@ const path = require('path');
 const PDFProcessor = require('./api/pdfProcessor');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // In-memory "database"
 const users = [];
